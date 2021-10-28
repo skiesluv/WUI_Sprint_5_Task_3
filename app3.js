@@ -84,21 +84,21 @@ array = [
         fullName: "John Johnson",
         dayRate: 20,
         workingDays: 23,
-        salary: 460
+        salary: 690
     },
 
     {
         fullName: "Tom Tomson",
         dayRate: 48,
         workingDays: 22,
-        salary: 1056
+        salary: 1584
     },
 
     {
         fullName: "Andy Ander",
         dayRate: 29,
         workingDays: 23,
-        salary: 667
+        salary: 1000.5
     }
 ]
 
@@ -107,10 +107,10 @@ console.log(array)
 arr = [...array]
 
 let sortedArray = arr.sort(function (a, b) {
-  if (a.salary < b.salary) {
+  if (a.salary > b.salary) {
     return 1;
   }
-  if (a.salary > b.salary) {
+  if (a.salary < b.salary) {
     return -1;
   }
   return 0;
